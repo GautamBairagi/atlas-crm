@@ -8,8 +8,15 @@ def create_product_notification(sender, instance, created, **kwargs):
     """Create notification when a product is created or updated"""
     try:
         from notifications.models import Notification
-        
+
         if created:
+            # Generate barcode for newly created product
+            try:
+                from utils.barcode_generator import BarcodeGenerator
+                barcode_data = BarcodeGenerator.generate_product_barcode(instance)
+                print(f"✅ Generated barcode for product {instance.id}: {barcode_data['code']}")
+            except Exception as e:
+                print(f"⚠️ Could not generate barcode for product: {e}")
             # Product was just created
             if not instance.is_approved:
                 # Create pending approval notification for seller

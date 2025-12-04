@@ -58,3 +58,4 @@ pillow
 qrcode[pil]
 django-auditlog
 cryptography
+django-fernet-fields

@@ -368,8 +368,19 @@ def approve_sourcing_request(request, request_id):
         request_obj.status = 'approved'
         request_obj.approved_by = request.user
         request_obj.approved_at = timezone.now()
+
+        # Generate barcode for approved sourcing request
+        try:
+            from utils.barcode_generator import BarcodeGenerator
+            barcode_data = BarcodeGenerator.generate_sourcing_barcode(request_obj)
+            # Store barcode data in request_obj if you have a field for it
+            # For now, just log that it was generated
+            print(f"✅ Generated barcode for sourcing request {request_obj.id}: {barcode_data['code']}")
+        except Exception as e:
+            print(f"⚠️ Could not generate barcode: {e}")
+
         request_obj.save()
-        
+
         # Create notification for the seller (not for the admin who approved)
         try:
             from notifications.models import Notification

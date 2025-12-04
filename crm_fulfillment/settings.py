@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'django_otp',
     'django_otp.plugins.otp_totp',
     'django_otp.plugins.otp_static',
-    # 'django_recaptcha',  # CAPTCHA for forms - install separately
+    'snowpenguin.django.recaptcha3',  # reCAPTCHA v3 for forms
     'auditlog',  # Audit trail system
     # Celery
     'django_celery_beat',
@@ -476,6 +476,16 @@ RECAPTCHA_REQUIRED_SCORE = 0.85
 
 # Audit Log Configuration
 AUDITLOG_INCLUDE_ALL_MODELS = False  # Manually register models
+
+# ==============================================================================
+# ENCRYPTION AT REST - PII Fields
+# ==============================================================================
+
+# Fernet encryption key for sensitive data
+# In production, this should be stored in environment variable
+FERNET_KEYS = [
+    os.environ.get('FERNET_KEY', 'on9ADLHqSpIRftPrxa_fHQNSoVnQtYiDyfryMV-cmD4='),
+]
 
 # ==============================================================================
 # END OF SETTINGS

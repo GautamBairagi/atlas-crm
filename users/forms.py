@@ -46,6 +46,10 @@ class RegisterForm(forms.ModelForm):
         label="Confirm Password",
         widget=forms.PasswordInput(attrs={'class': 'appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm'})
     )
+
+    # Add reCAPTCHA field
+    from snowpenguin.django.recaptcha3.fields import ReCaptchaField
+    captcha = ReCaptchaField()
     
     # Marketing platforms choices
     MARKETING_PLATFORMS_CHOICES = [
