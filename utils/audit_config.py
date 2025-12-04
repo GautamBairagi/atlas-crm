@@ -15,7 +15,7 @@ def register_audit_models():
         from roles.models import Role, Permission
         from inventory.models import Stock, InventoryMovement
         from finance.models import Payment, Invoice
-        from sellers.models import SellerProfile
+        from sellers.models import Seller, Product
         from users.models import User
         from sourcing.models import SourcingRequest
         from orders.models import Order, Return
@@ -27,7 +27,8 @@ def register_audit_models():
         auditlog.register(InventoryMovement)
         auditlog.register(Payment)
         auditlog.register(Invoice)
-        auditlog.register(SellerProfile)
+        auditlog.register(Seller)
+        auditlog.register(Product)
         auditlog.register(User)
         auditlog.register(SourcingRequest)
         auditlog.register(Order)

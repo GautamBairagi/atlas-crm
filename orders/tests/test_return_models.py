@@ -110,9 +110,9 @@ class ReturnModelTests(TestCase):
         # Verify saved fields
         self.assertEqual(return_obj.customer, self.customer)
         self.assertEqual(return_obj.order, self.order)
-        self.assertEqual(return_obj.reason, 'defective')
-        self.assertEqual(return_obj.description, 'Product arrived damaged')
-        self.assertEqual(return_obj.return_method, 'pickup')
+        self.assertEqual(return_obj.return_reason, 'defective')
+        self.assertEqual(return_obj.return_description, 'Product arrived damaged')
+        self.assertEqual(return_obj.refund_method, 'pickup')
 
     def test_return_code_auto_generation(self):
         """
@@ -236,7 +236,7 @@ class ReturnModelTests(TestCase):
         # Transition to approved
         return_obj.return_status = 'approved'
         return_obj.approved_by = self.admin
-        return_obj.approved_date = timezone.now()
+        return_obj.approved_at = timezone.now()
         return_obj.refund_amount = Decimal('250.00')
         return_obj.save()
 
@@ -244,7 +244,7 @@ class ReturnModelTests(TestCase):
         return_obj.refresh_from_db()
         self.assertEqual(return_obj.return_status, 'approved')
         self.assertEqual(return_obj.approved_by, self.admin)
-        self.assertIsNotNone(return_obj.approved_date)
+        self.assertIsNotNone(return_obj.approved_at)
         self.assertEqual(return_obj.refund_amount, Decimal('250.00'))
 
     def test_return_status_transitions_pending_to_rejected(self):
@@ -280,7 +280,7 @@ class ReturnModelTests(TestCase):
         # Step 1: pending → approved
         return_obj.return_status = 'approved'
         return_obj.approved_by = self.admin
-        return_obj.approved_date = timezone.now()
+        return_obj.approved_at = timezone.now()
         return_obj.refund_amount = Decimal('250.00')
         return_obj.save()
         self.assertEqual(return_obj.return_status, 'approved')
@@ -293,14 +293,14 @@ class ReturnModelTests(TestCase):
         # Step 3: in_transit → received
         return_obj.return_status = 'received'
         return_obj.received_by = self.admin
-        return_obj.received_date = timezone.now()
+        return_obj.received_at_warehouse = timezone.now()
         return_obj.save()
         self.assertEqual(return_obj.return_status, 'received')
 
         # Step 4: received → inspected (intermediate state)
         return_obj.return_status = 'inspected'
-        return_obj.inspected_by = self.admin
-        return_obj.inspection_date = timezone.now()
+        return_obj.inspector = self.admin
+        return_obj.inspection_completed_at = timezone.now()
         return_obj.save()
         self.assertEqual(return_obj.return_status, 'inspected')
 
@@ -312,7 +312,7 @@ class ReturnModelTests(TestCase):
         # Step 6: refund_approved → refunded
         return_obj.return_status = 'refunded'
         return_obj.refund_processed_by = self.admin
-        return_obj.refund_processed_date = timezone.now()
+        return_obj.refund_processed_at = timezone.now()
         return_obj.refund_method = 'bank_transfer'
         return_obj.refund_reference = 'TXN-123456'
         return_obj.save()
@@ -628,19 +628,19 @@ class ReturnStatusLogModelTests(TestCase):
         )
 
         # Query logs for this return
-        logs = ReturnStatusLog.objects.filter(return_request=self.return_obj).order_by('changed_at')
+        logs = ReturnStatusLog.objects.filter(return_request=self.return_obj).order_by('timestamp')
 
         # Verify count
         self.assertEqual(logs.count(), 3)
 
         # Verify chronological order
-        self.assertEqual(logs[0].status, 'pending')
-        self.assertEqual(logs[1].status, 'approved')
-        self.assertEqual(logs[2].status, 'in_transit')
+        self.assertEqual(logs[0].new_status, 'pending')
+        self.assertEqual(logs[1].new_status, 'approved')
+        self.assertEqual(logs[2].new_status, 'in_transit')
 
         # Verify timestamps are in order
-        self.assertLess(logs[0].changed_at, logs[1].changed_at)
-        self.assertLess(logs[1].changed_at, logs[2].changed_at)
+        self.assertLess(logs[0].timestamp, logs[1].timestamp)
+        self.assertLess(logs[1].timestamp, logs[2].timestamp)
 
     def test_return_status_log_string_representation(self):
         """Test __str__ method"""
@@ -755,7 +755,7 @@ class ReturnModelIntegrationTests(TestCase):
 
         # Verify relationships
         self.assertEqual(return_obj.items.count(), 1)
-        self.assertEqual(return_obj.return_status_logs.count(), 1)
+        self.assertEqual(return_obj.status_logs.count(), 1)
         self.assertEqual(return_item.return_request, return_obj)
         self.assertEqual(log_entry.return_request, return_obj)
 
