@@ -1406,3 +1406,25 @@ INFO 2025-12-04 08:58:30,200 apps 1896345 124306592809088 AXES: BEGIN version 8.
 INFO 2025-12-04 09:06:09,178 apps 1942079 129484244484224 AXES: BEGIN version 8.0.0, blocking by ip_address
 INFO 2025-12-04 09:06:09,228 apps 1942080 129484244484224 AXES: BEGIN version 8.0.0, blocking by ip_address
 INFO 2025-12-04 09:06:09,237 apps 1942095 129484244484224 AXES: BEGIN version 8.0.0, blocking by ip_address
+INFO 2025-12-04 09:10:53,663 apps 1971035 134010015789184 AXES: BEGIN version 8.0.0, blocking by ip_address
+INFO 2025-12-04 09:10:53,668 apps 1971033 134010015789184 AXES: BEGIN version 8.0.0, blocking by ip_address
+INFO 2025-12-04 09:10:53,698 apps 1971036 134010015789184 AXES: BEGIN version 8.0.0, blocking by ip_address
+WARNING 2025-12-04 09:13:14,661 log 1971036 134010015789184 Forbidden (Referer checking failed - no Referer.): /users/login/
+INFO 2025-12-04 09:36:27,811 database 1971033 134010015789184 AXES: User login failed, running database handler for failure.
+INFO 2025-12-04 09:36:27,814 database 1971033 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:36:27.696176+00:00
+WARNING 2025-12-04 09:36:27,822 database 1971033 134010015789184 AXES: New login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"}. Created new record in the database.
+INFO 2025-12-04 09:36:30,937 database 1971033 134010015789184 AXES: User login failed, running database handler for failure.
+INFO 2025-12-04 09:36:30,939 database 1971033 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:36:30.803597+00:00
+WARNING 2025-12-04 09:36:30,944 database 1971033 134010015789184 AXES: New login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"}. Created new record in the database.
+INFO 2025-12-04 09:36:33,902 database 1971033 134010015789184 AXES: User login failed, running database handler for failure.
+INFO 2025-12-04 09:36:33,904 database 1971033 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:36:33.779862+00:00
+WARNING 2025-12-04 09:36:33,909 database 1971033 134010015789184 AXES: New login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"}. Created new record in the database.
+INFO 2025-12-04 09:37:37,389 database 1971035 134010015789184 AXES: User login failed, running database handler for failure.
+INFO 2025-12-04 09:37:37,392 database 1971035 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:37:37.262486+00:00
+WARNING 2025-12-04 09:37:37,397 database 1971035 134010015789184 AXES: Repeated login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"}. Updated existing record in the database.
+INFO 2025-12-04 09:37:41,261 database 1971036 134010015789184 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"}.
+INFO 2025-12-04 09:37:41,263 database 1971036 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:37:40.823869+00:00
+INFO 2025-12-04 09:37:41,271 database 1971036 134010015789184 AXES: Reset 3 access attempts from database.
+INFO 2025-12-04 09:37:41,271 database 1971036 134010015789184 AXES: Deleted 3 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2025-12-04 09:37:44,300 database 1971035 134010015789184 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-04 14:37:44.297441+00:00
+INFO 2025-12-04 09:37:44,300 database 1971035 134010015789184 AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36", path_info: "/users/logout/"}.

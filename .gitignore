@@ -18,3 +18,6 @@ Thumbs.db
 *cache*/
 /media
 *.sqlite3
+node_modules/
+test-results/
+playwright-report/

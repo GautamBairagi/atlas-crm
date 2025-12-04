@@ -1,0 +1,19 @@
+{
+  "name": "new-python-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:delivery": "playwright test tests/phase5_delivery_finance/test_delivery_confirmation.spec.js",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
+  }
+}
