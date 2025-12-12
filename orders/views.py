@@ -607,8 +607,8 @@ def order_dashboard(request):
     else:
         orders = Order.objects.all()
     
-    # Get status counts for charts
-    status_counts = {status: orders.filter(status=status_code).count() 
+    # Get status counts for charts (use status_code as key for consistency)
+    status_counts = {status_code: orders.filter(status=status_code).count()
                     for status_code, status in Order.STATUS_CHOICES}
     
     # Get recent orders
@@ -896,6 +896,12 @@ def delete_order(request, order_id):
             return redirect('orders:detail', order_id=order.id)
     
     return render(request, 'orders/delete_order_confirm.html', {'order': order})
+
+@login_required
+def returns_dashboard_redirect(request):
+    """Redirect to returns dashboard."""
+    return redirect('orders:returns_dashboard')
+
 
 @login_required
 def download_template(request):

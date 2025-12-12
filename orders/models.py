@@ -173,18 +173,20 @@ class Order(models.Model):
         }
         
         if self.workflow_status in workflow_progression:
-            self.workflow_status = workflow_progression[self.workflow_status]
+            old_status = self.workflow_status
+            new_workflow_status = workflow_progression[self.workflow_status]
+            self.workflow_status = new_workflow_status
             self.save()
-            
+
             # Create workflow log entry
             OrderWorkflowLog.objects.create(
                 order=self,
-                from_status=workflow_progression[self.workflow_status],
-                to_status=new_status,
+                from_status=old_status,
+                to_status=new_workflow_status,
                 user=user,
                 notes=notes
             )
-            
+
             return True
         return False
 
