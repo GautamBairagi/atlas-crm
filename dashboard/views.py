@@ -253,29 +253,40 @@ def _render_admin_dashboard(request, role_name):
 def _get_real_system_performance():
     """Get real system performance metrics from the database."""
     try:
-        # Database performance metrics
-        with connection.cursor() as cursor:
-            # Get table sizes
-            cursor.execute("""
-                SELECT 
-                    schemaname,
-                    tablename,
-                    pg_size_pretty(pg_total_relation_size(schemaname||'.'||tablename)) as size
-                FROM pg_tables 
-                WHERE schemaname = 'public'
-                ORDER BY pg_total_relation_size(schemaname||'.'||tablename) DESC
-                LIMIT 5
-            """)
-            table_sizes = cursor.fetchall()
-            
-            # Calculate total database size
-            total_db_size = sum(
-                int(str(size).replace(' bytes', '').replace(' kB', '000').replace(' MB', '000000').replace(' GB', '000000000'))
-                for _, _, size in table_sizes if size and 'bytes' in str(size)
-            )
-            
-            # Convert to MB for display
-            db_size_mb = total_db_size / 1000000 if total_db_size > 0 else 0
+        # Database performance metrics - handle both PostgreSQL and SQLite
+        db_engine = connection.vendor
+        db_size_mb = 0
+
+        if db_engine == 'postgresql':
+            with connection.cursor() as cursor:
+                # Get table sizes for PostgreSQL
+                cursor.execute("""
+                    SELECT
+                        schemaname,
+                        tablename,
+                        pg_size_pretty(pg_total_relation_size(schemaname||'.'||tablename)) as size
+                    FROM pg_tables
+                    WHERE schemaname = 'public'
+                    ORDER BY pg_total_relation_size(schemaname||'.'||tablename) DESC
+                    LIMIT 5
+                """)
+                table_sizes = cursor.fetchall()
+
+                # Calculate total database size
+                total_db_size = sum(
+                    int(str(size).replace(' bytes', '').replace(' kB', '000').replace(' MB', '000000').replace(' GB', '000000000'))
+                    for _, _, size in table_sizes if size and 'bytes' in str(size)
+                )
+                db_size_mb = total_db_size / 1000000 if total_db_size > 0 else 0
+        else:
+            # For SQLite, get file size directly
+            import os
+            from django.conf import settings
+            db_path = settings.DATABASES['default'].get('NAME', '')
+            if db_path and os.path.exists(str(db_path)):
+                db_size_mb = os.path.getsize(str(db_path)) / (1024 * 1024)
+            else:
+                db_size_mb = 0
             
         # API calls - count recent audit log entries
         api_calls = AuditLog.objects.filter(

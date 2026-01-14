@@ -32,6 +32,7 @@ TEMPLATE_DEBUG = DEBUG
 
 # Properly configure allowed hosts for production
 ALLOWED_HOSTS = [
+    'atlas.kiaantechnology.com',
     'atlas.alexandratechlab.com',
     'atlas-crm.alexandratechlab.com',
     'localhost',
@@ -352,6 +353,8 @@ CORS_ALLOWED_HEADERS = [
 
 # CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = [
+    "https://atlas.kiaantechnology.com",
+    "http://atlas.kiaantechnology.com",
     "https://atlas-crmsystem.codixverse.cloud",
     "http://atlas-crmsystem.codixverse.cloud",
     "https://atlas.alexandratechlab.com",
@@ -416,19 +419,35 @@ CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60  # 30 minutes
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
-# Cache Configuration
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': f'{REDIS_URL}/1',
-        'KEY_PREFIX': 'atlas_crm',
-        'TIMEOUT': 300,  # 5 minutes default
-    },
-    'axes': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': f'{REDIS_URL}/2',
+# Cache Configuration - Using LocMemCache (Redis optional)
+REDIS_AVAILABLE = os.environ.get('REDIS_HOST', None) is not None
+
+if REDIS_AVAILABLE:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+            'LOCATION': f'{REDIS_URL}/1',
+            'KEY_PREFIX': 'atlas_crm',
+            'TIMEOUT': 300,
+        },
+        'axes': {
+            'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+            'LOCATION': f'{REDIS_URL}/2',
+        }
     }
-}
+else:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+            'LOCATION': 'atlas-crm-default',
+            'KEY_PREFIX': 'atlas_crm',
+            'TIMEOUT': 300,
+        },
+        'axes': {
+            'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+            'LOCATION': 'atlas-crm-axes',
+        }
+    }
 
 # Axes Cache Backend
 AXES_CACHE = 'axes'

@@ -40,9 +40,6 @@ def login_view(request):
                 elif not user.is_active:
                     messages.error(request, "Your account is not active. Please contact the administration.")
                     return redirect('users:login')
-                elif not user.email_verified and not user.is_superuser:
-                    messages.error(request, "Please verify your email address before logging in. Check your email for the verification code.")
-                    return redirect('users:login')
                 else:
                     # Check if user has 2FA enabled
                     try:
