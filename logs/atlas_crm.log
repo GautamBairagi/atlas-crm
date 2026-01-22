@@ -13545,3 +13545,249 @@ Traceback (most recent call last):
     raise (import_string(cls) if isinstance(cls, str) else cls)()
 django_ratelimit.exceptions.Ratelimited
 INFO 2025-12-07 08:25:02,266 tasks 3806611 130342932914304 Stock alert check completed. Created: 0, Resolved: 0
+INFO 2026-01-22 12:40:19,932 autoreload 11508 18624 Watching for file changes with StatReloader
+INFO 2026-01-22 12:42:05,268 autoreload 18680 5020 Watching for file changes with StatReloader
+INFO 2026-01-22 13:01:14,706 autoreload 11508 18624 D:\python-project-22-2026\atlas-crm\venv\lib\site-packages\django\__init__.py changed, reloading.
+INFO 2026-01-22 13:01:14,860 autoreload 18680 5020 D:\python-project-22-2026\atlas-crm\venv\lib\site-packages\django\apps\__init__.py changed, reloading.
+INFO 2026-01-22 13:02:50,943 autoreload 11580 6848 Watching for file changes with StatReloader
+INFO 2026-01-22 13:02:58,974 autoreload 11580 6848 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:03:08,625 autoreload 10452 976 Watching for file changes with StatReloader
+INFO 2026-01-22 13:06:05,250 autoreload 10452 976 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:06:12,625 autoreload 14324 6680 Watching for file changes with StatReloader
+INFO 2026-01-22 13:08:33,980 autoreload 13972 2644 Watching for file changes with StatReloader
+INFO 2026-01-22 13:09:01,314 autoreload 13972 2644 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:09:01,406 autoreload 14324 6680 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:09:13,448 autoreload 19152 10216 Watching for file changes with StatReloader
+INFO 2026-01-22 13:09:14,122 autoreload 2604 7892 Watching for file changes with StatReloader
+INFO 2026-01-22 13:09:18,376 basehttp 19152 3444 "GET / HTTP/1.1" 200 90179
+INFO 2026-01-22 13:09:28,057 basehttp 19152 3444 - Broken pipe from ('127.0.0.1', 51450)
+INFO 2026-01-22 13:09:57,684 basehttp 19152 1320 "GET / HTTP/1.1" 200 90179
+INFO 2026-01-22 13:09:57,864 basehttp 19152 7288 "GET /static/css/arabic-fonts.css HTTP/1.1" 200 1858
+INFO 2026-01-22 13:09:57,864 basehttp 19152 1320 "GET /static/css/custom.css HTTP/1.1" 200 19524
+INFO 2026-01-22 13:09:57,901 basehttp 19152 1320 "GET /static/img/seller_dashboard.png HTTP/1.1" 200 105177
+INFO 2026-01-22 13:09:57,943 basehttp 19152 7288 "GET /static/img/logo_icon.png HTTP/1.1" 200 387988
+INFO 2026-01-22 13:09:57,966 basehttp 19152 1320 "GET /static/img/delivery_logo_white.png HTTP/1.1" 200 133510
+INFO 2026-01-22 13:10:00,349 basehttp 19152 1320 "GET /static/img/atlas_logo.svg HTTP/1.1" 200 1740
+INFO 2026-01-22 13:10:03,308 basehttp 19152 1320 "GET /users/login/ HTTP/1.1" 200 18304
+WARNING 2026-01-22 13:10:06,631 log 19152 10504 Not Found: /favicon.ico
+WARNING 2026-01-22 13:10:06,632 basehttp 19152 10504 "GET /favicon.ico HTTP/1.1" 404 8931
+INFO 2026-01-22 13:10:14,359 basehttp 19152 10504 "POST /users/login/ HTTP/1.1" 200 19360
+INFO 2026-01-22 13:10:31,749 basehttp 19152 5480 "POST /users/login/ HTTP/1.1" 200 19360
+WARNING 2026-01-22 13:11:30,413 log 19152 4028 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:11:30,415 basehttp 19152 4028 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:11:44,486 basehttp 19152 18628 "POST /users/login/ HTTP/1.1" 200 19360
+WARNING 2026-01-22 13:11:44,620 log 19152 18628 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:11:44,621 basehttp 19152 18628 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:15:46,904 autoreload 19152 10216 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:15:47,195 autoreload 2604 7892 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:15:57,599 autoreload 17860 5444 Watching for file changes with StatReloader
+INFO 2026-01-22 13:15:57,878 autoreload 14908 1032 Watching for file changes with StatReloader
+INFO 2026-01-22 13:17:00,949 autoreload 14908 1032 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:17:01,184 autoreload 17860 5444 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 13:17:06,243 autoreload 17788 13676 Watching for file changes with StatReloader
+INFO 2026-01-22 13:17:06,283 autoreload 12312 11644 Watching for file changes with StatReloader
+INFO 2026-01-22 13:17:24,996 basehttp 12312 11456 "GET / HTTP/1.1" 200 90179
+INFO 2026-01-22 13:17:25,070 basehttp 12312 11456 "GET /static/css/custom.css HTTP/1.1" 304 0
+INFO 2026-01-22 13:17:25,071 basehttp 12312 13868 "GET /static/css/arabic-fonts.css HTTP/1.1" 304 0
+INFO 2026-01-22 13:17:25,075 basehttp 12312 13868 "GET /static/img/logo_icon.png HTTP/1.1" 304 0
+INFO 2026-01-22 13:17:25,078 basehttp 12312 11456 "GET /static/img/seller_dashboard.png HTTP/1.1" 304 0
+WARNING 2026-01-22 13:17:25,140 log 12312 11456 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:17:25,141 basehttp 12312 11456 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:17:25,456 basehttp 12312 11456 "GET /static/img/delivery_logo_white.png HTTP/1.1" 304 0
+INFO 2026-01-22 13:17:32,872 basehttp 12312 8028 "GET /users/login/ HTTP/1.1" 200 18304
+WARNING 2026-01-22 13:17:33,012 log 12312 8028 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:17:33,013 basehttp 12312 8028 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:17:47,284 basehttp 12312 16000 "POST /users/login/ HTTP/1.1" 200 19360
+WARNING 2026-01-22 13:17:47,388 log 12312 16000 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:17:47,389 basehttp 12312 16000 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:18:01,973 basehttp 12312 13988 "POST /users/login/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:18:02,358 basehttp 12312 13988 "GET /dashboard/ HTTP/1.1" 200 138532
+WARNING 2026-01-22 13:18:02,637 log 12312 16532 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:18:02,641 basehttp 12312 16532 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:18:03,043 basehttp 12312 13988 "GET /static/css/enhanced-forms.css HTTP/1.1" 200 5464
+INFO 2026-01-22 13:18:03,239 basehttp 12312 17360 "GET /static/css/modern-theme.css HTTP/1.1" 200 11455
+INFO 2026-01-22 13:18:03,241 basehttp 12312 16532 "GET /static/js/user-guide.js HTTP/1.1" 200 17880
+INFO 2026-01-22 13:18:04,042 basehttp 12312 16532 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:18:14,228 basehttp 12312 11300 "GET /users/logout/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:18:14,562 basehttp 12312 11300 "GET /users/login/ HTTP/1.1" 200 19321
+WARNING 2026-01-22 13:18:14,746 log 12312 11300 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:18:14,747 basehttp 12312 11300 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:18:32,975 basehttp 12312 1140 "POST /users/login/ HTTP/1.1" 200 19360
+WARNING 2026-01-22 13:18:33,069 log 12312 1140 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:18:33,069 basehttp 12312 1140 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:05,274 basehttp 12312 14624 "POST /users/login/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:28:05,444 basehttp 12312 14624 "GET /dashboard/ HTTP/1.1" 200 138540
+INFO 2026-01-22 13:28:05,553 basehttp 12312 12356 "GET /static/css/modern-theme.css HTTP/1.1" 304 0
+INFO 2026-01-22 13:28:05,554 basehttp 12312 7620 "GET /static/css/enhanced-forms.css HTTP/1.1" 304 0
+WARNING 2026-01-22 13:28:05,598 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:05,599 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:05,678 basehttp 12312 14624 "GET /static/js/user-guide.js HTTP/1.1" 304 0
+INFO 2026-01-22 13:28:06,864 basehttp 12312 14624 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:10,993 basehttp 12312 14624 "GET /users/ HTTP/1.1" 200 145159
+WARNING 2026-01-22 13:28:11,177 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:11,178 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:12,287 basehttp 12312 14624 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:13,846 basehttp 12312 14624 "GET /sellers/ HTTP/1.1" 200 127566
+WARNING 2026-01-22 13:28:14,069 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:14,070 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:15,108 basehttp 12312 14624 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:16,413 basehttp 12312 14624 "GET /orders/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:28:16,601 basehttp 12312 14624 "GET /dashboard/ HTTP/1.1" 200 138547
+WARNING 2026-01-22 13:28:16,843 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:16,844 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:17,608 basehttp 12312 14624 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:19,682 basehttp 12312 14624 "GET /sellers/ HTTP/1.1" 200 127566
+WARNING 2026-01-22 13:28:19,856 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:19,858 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:20,622 basehttp 12312 14624 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:21,527 basehttp 12312 14624 "GET /orders/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:28:21,845 basehttp 12312 14624 "GET /dashboard/ HTTP/1.1" 200 138547
+WARNING 2026-01-22 13:28:22,015 log 12312 14624 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:22,016 basehttp 12312 14624 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:23,513 basehttp 12312 7152 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:24,723 basehttp 12312 7152 "GET /sellers/products/ HTTP/1.1" 200 127321
+WARNING 2026-01-22 13:28:24,909 log 12312 7152 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:24,910 basehttp 12312 7152 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:25,717 basehttp 12312 7152 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:31,973 basehttp 12312 7152 "GET /inventory/ HTTP/1.1" 200 121353
+WARNING 2026-01-22 13:28:32,128 log 12312 7152 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:32,129 basehttp 12312 7152 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:33,349 basehttp 12312 10024 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:34,744 basehttp 12312 10024 "GET /finance/ HTTP/1.1" 200 129200
+WARNING 2026-01-22 13:28:34,989 log 12312 10024 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:34,989 basehttp 12312 10024 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:35,799 basehttp 12312 10024 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:40,482 basehttp 12312 10024 "GET /sourcing/ HTTP/1.1" 200 127983
+WARNING 2026-01-22 13:28:40,632 log 12312 10024 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:40,633 basehttp 12312 10024 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:41,371 basehttp 12312 10024 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:47,139 basehttp 12312 5128 "GET /packaging/agent/ HTTP/1.1" 200 120547
+WARNING 2026-01-22 13:28:47,339 log 12312 5128 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:47,340 basehttp 12312 5128 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:48,142 basehttp 12312 5128 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:28:58,409 basehttp 12312 4116 "GET /callcenter/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:28:58,632 basehttp 12312 4116 "GET /callcenter/manager/ HTTP/1.1" 200 132363
+WARNING 2026-01-22 13:28:58,814 log 12312 4116 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:28:58,815 basehttp 12312 4116 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:28:59,900 basehttp 12312 4116 "GET /notifications/get/ HTTP/1.1" 200 346
+INFO 2026-01-22 13:29:10,752 basehttp 12312 1324 "GET /users/logout/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:29:10,771 basehttp 12312 1324 "GET /users/login/ HTTP/1.1" 200 19321
+WARNING 2026-01-22 13:29:11,068 log 12312 1324 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:29:11,069 basehttp 12312 1324 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:29:26,788 basehttp 12312 10996 "POST /users/login/ HTTP/1.1" 302 0
+INFO 2026-01-22 13:29:26,924 basehttp 12312 10996 "GET /dashboard/ HTTP/1.1" 200 138532
+WARNING 2026-01-22 13:29:27,146 log 12312 10996 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 13:29:27,147 basehttp 12312 10996 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 13:29:28,415 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1518
+INFO 2026-01-22 13:29:58,430 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1518
+INFO 2026-01-22 13:30:28,435 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1518
+INFO 2026-01-22 13:30:58,428 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1518
+INFO 2026-01-22 13:31:28,420 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:31:58,445 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:32:28,425 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:32:58,425 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:33:28,905 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:33:58,419 basehttp 12312 10996 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:34:28,749 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:34:58,420 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:35:28,478 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:35:58,448 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:36:28,777 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:36:58,424 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:37:28,429 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:37:58,424 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:38:28,434 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:38:58,420 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:39:28,451 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:39:58,429 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:40:28,449 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:40:58,422 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:41:28,446 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:41:58,448 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:42:28,434 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:42:58,428 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:43:28,424 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:43:58,430 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:44:28,445 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:44:58,480 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:45:28,445 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:45:58,483 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:46:28,439 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:46:58,443 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:47:28,443 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:47:58,425 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:48:28,425 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:48:58,419 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:49:28,445 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:49:58,427 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:50:28,445 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:50:58,423 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:51:28,440 basehttp 12312 1196 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:51:58,741 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:52:28,448 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:52:58,424 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:53:28,434 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:53:58,444 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:54:28,428 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:54:58,426 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:55:28,439 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:55:58,463 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:56:28,440 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:56:58,430 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:57:28,428 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:57:58,444 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:58:28,429 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:58:58,423 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:59:28,431 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 13:59:58,435 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:00:28,445 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:00:58,421 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:01:28,445 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:01:58,425 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:02:28,423 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:02:58,440 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:03:28,438 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:03:58,426 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:04:28,449 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:04:58,444 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:05:28,419 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:05:58,448 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:06:28,460 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:06:58,428 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:07:28,425 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 1523
+INFO 2026-01-22 14:07:42,718 basehttp 12312 4656 "GET /users/logout/ HTTP/1.1" 302 0
+INFO 2026-01-22 14:07:42,747 basehttp 12312 4656 "GET /users/login/ HTTP/1.1" 200 19321
+WARNING 2026-01-22 14:07:43,001 log 12312 4656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 14:07:43,002 basehttp 12312 4656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 14:07:54,133 basehttp 12312 4656 "POST /users/login/ HTTP/1.1" 302 0
+INFO 2026-01-22 14:07:54,279 basehttp 12312 4656 "GET /callcenter/agent/ HTTP/1.1" 200 121376
+INFO 2026-01-22 14:07:54,433 basehttp 12312 7976 "GET /static/css/enhanced-forms.css HTTP/1.1" 304 0
+WARNING 2026-01-22 14:07:54,440 log 12312 4656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 14:07:54,442 basehttp 12312 4656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 14:07:54,692 basehttp 12312 7976 "GET /static/css/modern-theme.css HTTP/1.1" 304 0
+INFO 2026-01-22 14:07:54,696 basehttp 12312 4656 "GET /static/js/user-guide.js HTTP/1.1" 304 0
+INFO 2026-01-22 14:07:55,673 basehttp 12312 4656 "GET /notifications/get/ HTTP/1.1" 200 347
+INFO 2026-01-22 14:08:12,749 basehttp 12312 4656 "GET /users/logout/ HTTP/1.1" 302 0
+INFO 2026-01-22 14:08:12,769 basehttp 12312 4656 "GET /users/login/ HTTP/1.1" 200 19321
+WARNING 2026-01-22 14:08:12,902 log 12312 4656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-01-22 14:08:12,903 basehttp 12312 4656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 9042
+INFO 2026-01-22 14:09:51,562 autoreload 17788 13676 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 14:09:52,108 autoreload 12312 11644 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 14:10:01,991 autoreload 9144 15520 Watching for file changes with StatReloader
+INFO 2026-01-22 14:10:02,708 autoreload 1532 15948 Watching for file changes with StatReloader
+INFO 2026-01-22 14:10:56,375 basehttp 9144 17148 "GET / HTTP/1.1" 200 90179
+INFO 2026-01-22 14:10:56,625 basehttp 9144 17356 "GET /static/css/arabic-fonts.css HTTP/1.1" 200 1858
+INFO 2026-01-22 14:10:56,659 basehttp 9144 17148 "GET /static/css/custom.css HTTP/1.1" 200 19524
+INFO 2026-01-22 14:10:56,758 basehttp 9144 8356 "GET /static/img/seller_dashboard.png HTTP/1.1" 200 105177
+INFO 2026-01-22 14:10:56,808 basehttp 9144 8356 "GET /static/img/delivery_logo_white.png HTTP/1.1" 200 133510
+INFO 2026-01-22 14:10:56,811 basehttp 9144 3684 "GET /static/img/logo_icon.png HTTP/1.1" 200 387988
+INFO 2026-01-22 14:11:00,568 basehttp 9144 8356 "GET /users/login/ HTTP/1.1" 200 18304
+WARNING 2026-01-22 14:11:04,963 log 9144 8356 Not Found: /favicon.ico
+WARNING 2026-01-22 14:11:04,964 basehttp 9144 8356 "GET /favicon.ico HTTP/1.1" 404 8933
+INFO 2026-01-22 14:11:13,517 basehttp 9144 8356 "POST /users/login/ HTTP/1.1" 302 0
+INFO 2026-01-22 14:11:13,619 basehttp 9144 8356 "GET /dashboard/ HTTP/1.1" 302 0
+INFO 2026-01-22 14:11:13,629 basehttp 9144 8356 "GET /users/login/?next=/dashboard/ HTTP/1.1" 200 18304
+INFO 2026-01-22 14:11:54,065 autoreload 1532 15948 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 14:11:54,173 autoreload 9144 15520 D:\python-project-22-2026\atlas-crm\crm_fulfillment\settings.py changed, reloading.
+INFO 2026-01-22 14:11:59,786 autoreload 7728 9716 Watching for file changes with StatReloader
+INFO 2026-01-22 14:11:59,939 autoreload 13048 3960 Watching for file changes with StatReloader

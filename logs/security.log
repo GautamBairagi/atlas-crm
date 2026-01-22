@@ -1834,3 +1834,77 @@ INFO 2025-12-07 08:25:40,109 database 3050967 130792680579200 AXES: Successful l
 INFO 2025-12-07 08:25:40,111 database 3050967 130792680579200 AXES: Cleaned up 0 expired access attempts from database that were older than 2025-12-07 13:25:39.959193+00:00
 INFO 2025-12-07 08:25:40,116 database 3050967 130792680579200 AXES: Reset 0 access attempts from database.
 INFO 2025-12-07 08:25:40,117 database 3050967 130792680579200 AXES: Deleted 0 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.7499.4 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 13:02:44,586 apps 13456 11064 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:02:50,805 apps 11580 6848 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:03:08,391 apps 10452 976 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:03:12,942 apps 18520 3324 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:04:52,989 apps 4892 13348 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:05:30,386 apps 4832 8636 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:06:12,502 apps 14324 6680 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:06:16,870 apps 72 15068 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:08:29,196 apps 1808 1004 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:08:33,837 apps 13972 2644 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:09:13,059 apps 19152 10216 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:09:13,733 apps 2604 7892 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:10:14,331 database 19152 10504 AXES: User login failed, running database handler for failure.
+INFO 2026-01-22 13:10:14,333 database 19152 10504 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:40:13.921191+00:00
+WARNING 2026-01-22 13:10:14,341 database 19152 10504 AXES: New login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}. Created new record in the database.
+INFO 2026-01-22 13:10:31,719 database 19152 5480 AXES: User login failed, running database handler for failure.
+INFO 2026-01-22 13:10:31,722 database 19152 5480 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:40:31.533455+00:00
+WARNING 2026-01-22 13:10:31,732 database 19152 5480 AXES: Repeated login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}. Updated existing record in the database.
+INFO 2026-01-22 13:11:44,455 database 19152 18628 AXES: User login failed, running database handler for failure.
+INFO 2026-01-22 13:11:44,458 database 19152 18628 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:41:43.828908+00:00
+WARNING 2026-01-22 13:11:44,467 database 19152 18628 AXES: Repeated login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}. Updated existing record in the database.
+INFO 2026-01-22 13:12:00,685 apps 13048 16908 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:12:34,334 apps 864 19284 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:12:40,752 apps 8288 7764 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:13:12,595 apps 2852 12624 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:14:54,094 apps 9816 17024 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:15:57,381 apps 17860 5444 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:15:57,418 apps 14908 1032 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:16:10,873 apps 2716 9324 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:16:49,329 apps 6540 10800 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:17:06,097 apps 17788 13676 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:17:06,124 apps 12312 11644 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:17:47,244 database 12312 16000 AXES: User login failed, running database handler for failure.
+INFO 2026-01-22 13:17:47,246 database 12312 16000 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:47:46.805536+00:00
+WARNING 2026-01-22 13:17:47,259 database 12312 16000 AXES: Repeated login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}. Updated existing record in the database.
+INFO 2026-01-22 13:18:01,894 database 12312 13988 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}.
+INFO 2026-01-22 13:18:01,897 database 12312 13988 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:48:01.576424+00:00
+INFO 2026-01-22 13:18:01,920 database 12312 13988 AXES: Reset 1 access attempts from database.
+INFO 2026-01-22 13:18:01,921 database 12312 13988 AXES: Deleted 1 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 13:18:14,135 database 12312 11300 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:48:14.133031+00:00
+INFO 2026-01-22 13:18:14,135 database 12312 11300 AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/logout/"}.
+INFO 2026-01-22 13:18:32,940 database 12312 1140 AXES: User login failed, running database handler for failure.
+INFO 2026-01-22 13:18:32,942 database 12312 1140 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:48:32.569254+00:00
+WARNING 2026-01-22 13:18:32,952 database 12312 1140 AXES: New login failure by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}. Created new record in the database.
+INFO 2026-01-22 13:20:47,014 apps 5448 15956 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:21:18,499 apps 8180 16812 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:24:37,289 apps 11872 14972 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:25:13,819 apps 10140 10376 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 13:28:05,235 database 12312 14624 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}.
+INFO 2026-01-22 13:28:05,238 database 12312 14624 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:58:05.034015+00:00
+INFO 2026-01-22 13:28:05,253 database 12312 14624 AXES: Reset 1 access attempts from database.
+INFO 2026-01-22 13:28:05,254 database 12312 14624 AXES: Deleted 1 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 13:29:10,741 database 12312 1324 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:59:10.738569+00:00
+INFO 2026-01-22 13:29:10,741 database 12312 1324 AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/logout/"}.
+INFO 2026-01-22 13:29:26,755 database 12312 10996 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}.
+INFO 2026-01-22 13:29:26,756 database 12312 10996 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 06:59:26.541461+00:00
+INFO 2026-01-22 13:29:26,766 database 12312 10996 AXES: Reset 0 access attempts from database.
+INFO 2026-01-22 13:29:26,767 database 12312 10996 AXES: Deleted 0 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 14:07:42,703 database 12312 4656 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 07:37:42.700751+00:00
+INFO 2026-01-22 14:07:42,703 database 12312 4656 AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/logout/"}.
+INFO 2026-01-22 14:07:54,092 database 12312 4656 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}.
+INFO 2026-01-22 14:07:54,094 database 12312 4656 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 07:37:53.860797+00:00
+INFO 2026-01-22 14:07:54,102 database 12312 4656 AXES: Reset 0 access attempts from database.
+INFO 2026-01-22 14:07:54,102 database 12312 4656 AXES: Deleted 0 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 14:08:12,737 database 12312 4656 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 07:38:12.735722+00:00
+INFO 2026-01-22 14:08:12,737 database 12312 4656 AXES: Successful logout by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/logout/"}.
+INFO 2026-01-22 14:10:01,627 apps 9144 15520 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 14:10:02,527 apps 1532 15948 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 14:11:13,440 database 9144 8356 AXES: Successful login by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"}.
+INFO 2026-01-22 14:11:13,448 database 9144 8356 AXES: Cleaned up 0 expired access attempts from database that were older than 2026-01-22 07:41:12.682666+00:00
+INFO 2026-01-22 14:11:13,458 database 9144 8356 AXES: Reset 0 access attempts from database.
+INFO 2026-01-22 14:11:13,459 database 9144 8356 AXES: Deleted 0 failed login attempts by {username: "********************", ip_address: "********************", user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36", path_info: "/users/login/"} from database.
+INFO 2026-01-22 14:11:59,622 apps 7728 9716 AXES: BEGIN version 8.1.0, blocking by ip_address
+INFO 2026-01-22 14:11:59,807 apps 13048 3960 AXES: BEGIN version 8.1.0, blocking by ip_address
